@@ -1,0 +1,78 @@
+:root{
+  --tw-offwhite:#F7F7F3;
+  --tw-charcoal:#1E2227;
+  --tw-mint:#2ED8C3;
+  --tw-tangerine:#FF7A1C;
+  --tw-ink:#0F1115;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background:var(--tw-offwhite);
+  color:var(--tw-charcoal);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.container{max-width:1120px;margin:0 auto;padding:0 24px}
+
+.section{padding:64px 0;border-top:1px solid rgba(0,0,0,0.06)}
+.section:first-child{border-top:none}
+.section h2{margin:0 0 16px;font-size:28px;letter-spacing:0.2px}
+.section p{margin:0;color:#4A4F57}
+
+.hero{
+  display:grid;
+  grid-template-columns:1.1fr 0.9fr;
+  gap:28px;
+  align-items:center;
+  padding:56px 0 24px 0;
+}
+@media (max-width:900px){.hero{grid-template-columns:1fr}}
+.heroTag{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;background:#E9FFFB;color:#0F6B62;font-weight:600;font-size:12px;letter-spacing:.6px;text-transform:uppercase}
+.heroTitle{font-size:56px;line-height:1.02;margin:10px 0 14px 0;letter-spacing:.2px}
+.heroSubtitle{font-size:18px;color:#555;max-width:60ch}
+.heroVisual{display:flex;justify-content:center;align-items:center}
+
+.logoLarge{display:inline-block}
+
+.badge{display:inline-flex;align-items:center;gap:10px;padding:12px 14px;border-radius:14px;background:#101317;color:#EAFEF9;border:1px solid rgba(255,255,255,0.06)}
+.badgeDot{width:10px;height:10px;background:var(--tw-tangerine);border-radius:50%;box-shadow:0 0 0 4px rgba(255,122,28,0.2)}
+
+.paletteGrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:16px}
+@media (max-width:900px){.paletteGrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.swatch{border-radius:16px;overflow:hidden;border:1px solid rgba(0,0,0,0.08)}
+.swatchChip{height:112px}
+.swatchMeta{padding:12px 14px;display:flex;justify-content:space-between;align-items:center}
+.swatchMeta b{letter-spacing:.3px}
+
+.typoRow{display:flex;gap:24px;align-items:baseline;flex-wrap:wrap}
+.typoSample{font-weight:700}
+.typoP{color:#4A4F57}
+
+.gridTwo{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+@media (max-width:900px){.gridTwo{grid-template-columns:1fr}}
+
+.lockups{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+@media (max-width:900px){.lockups{grid-template-columns:1fr 1fr}}
+.lockupCard{border-radius:16px;border:1px solid rgba(0,0,0,0.08);padding:24px;background:white;display:flex;align-items:center;justify-content:center}
+
+.downloads{display:flex;gap:12px;flex-wrap:wrap}
+.downloadBtn{display:inline-flex;gap:10px;align-items:center;padding:12px 16px;border-radius:12px;border:1px solid rgba(0,0,0,0.12);background:white;color:var(--tw-charcoal);text-decoration:none;font-weight:600}
+.downloadBtn:hover{border-color:rgba(0,0,0,0.2)}
+
+.footer{padding:28px 0 64px 0;color:#6A7078;font-size:14px}
+
+/* Can mockup */
+.can{
+  width:220px;height:440px;border-radius:28px;position:relative;box-shadow:0 10px 30px rgba(0,0,0,0.12), inset 0 0 0 1px rgba(0,0,0,0.08);overflow:hidden;background:linear-gradient(160deg,#DFFFF7 0%,#E8FFFB 40%,#C7FFF3 100%);
+}
+.canLabel{position:absolute;inset:24px;border-radius:20px;background:linear-gradient(180deg,#EFFFFA 0%,#F7FFFD 100%);border:1px solid rgba(0,0,0,0.06);display:flex;align-items:center;justify-content:center;padding:16px}
+.canTop{position:absolute;top:0;left:0;right:0;height:54px;background:linear-gradient(180deg,#F9F9F5 0%,#EDEDE9 100%);box-shadow:inset 0 -1px 0 rgba(0,0,0,0.1)}
+.capRing{position:absolute;top:6px;left:50%;transform:translateX(-50%);width:140px;height:20px;border-radius:999px;background:radial-gradient(circle at 50% 50%,rgba(255,122,28,0.9),rgba(255,122,28,0.4));filter:saturate(1.1)}
+.capHint{position:absolute;top:10px;left:50%;transform:translateX(-50%);color:white;font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase}
+.fizz{position:absolute;inset:auto 0 16px 0;height:120px;background:radial-gradient(120px 60px at 50% 120%, rgba(46,216,195,0.25), rgba(255,122,28,0.10) 60%, transparent 70%)}
+
+.logoInCan{transform:translateY(-6px)}
